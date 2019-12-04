@@ -38,7 +38,7 @@ class Comment(models.Model):
         self.save()
 
     def get_absolute_url(self):
-        return reverse('post_detail', kwargs={'pk': self.post})
+        return reverse('post_detail', kwargs={'pk': self.post.pk})
 
     def str(self):
         return self.text
