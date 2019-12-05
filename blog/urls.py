@@ -39,8 +39,8 @@ urlpatterns = [
     ),
     url(
         r'^post/(?P<pk>\d+)/comment/$',
-        views.add_coment_to_post,
-        name='add_coment_to_post'
+        views.add_comment_to_post,
+        name='add_comment_to_post'
     ),
     url(
         r'^comment/(?P<pk>\d+)/approve/$',
